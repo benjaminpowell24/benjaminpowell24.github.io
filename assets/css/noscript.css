@@ -23,7 +23,7 @@
 
 /* Intro */
 
-	body.is-preload #intro {
+	/* body #intro {
 		opacity: 1;
 	}
 
@@ -33,4 +33,4 @@
 			-ms-transform: none;
 			transform: none;
 			opacity: 1;
-		}
+		} */

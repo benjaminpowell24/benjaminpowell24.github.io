@@ -8,6 +8,7 @@
 
 	var	$window = $(window),
 		$body = $('body'),
+		$loaderWrapper = $('#loader-wrapper'),
 		$wrapper = $('#wrapper'),
 		$header = $('#header'),
 		$nav = $('#nav'),
@@ -113,9 +114,11 @@
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
-				$body.removeClass('is-preload');
+				$body.addClass('loaded');
 			}, 100);
+
 		});
+		
 
 	// Scrolly.
 		$('.scrolly').scrolly();
