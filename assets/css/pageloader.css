@@ -157,6 +157,13 @@
       typing 2.5s steps(30, end) forwards,
       blink-caret .75s step-end infinite;
   }
+
+  @media screen and (max-width: 1280px){
+    .typewriter{
+        font-size: 1rem!important;
+        border-right: 0.1em solid orange;
+    }
+  }
   
   /* The typing effect */
   @keyframes typing {
