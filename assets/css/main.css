@@ -138,7 +138,8 @@ input, select, textarea {
 		}
 
 	body {
-		color: #212931;
+		/* color: #212931; */
+		color: #c5c5c5;
 	}
 
 	body, input, select, textarea {
@@ -287,7 +288,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: blue;
+		color: #18bfef;
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
@@ -297,24 +298,24 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #212931;
+		color: #f0f2f0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #f0f2f0;
 	}
 
 	blockquote {
-		border-left-color: #eeeeee;
+		border-left-color: #c5c5c5;
 	}
 
 	code {
-		background: rgba(220, 220, 220, 0.25);
-		border-color: #eeeeee;
+		background: rgba(63, 35, 35, 0.25);
+		border-color: #c5c5c5;
 	}
 
 	hr {
-		border-bottom-color: #eeeeee;
+		border-bottom-color: #c5c5c5;
 	}
 
 /* Row */
@@ -2051,7 +2052,7 @@ input, select, textarea {
 		}
 
 	.box {
-		border-color: #eeeeee;
+		border-color: #c5c5c5;
 	}
 
 /* Button */
@@ -2201,8 +2202,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 2px #c5c5c5;
+		color: #c5c5c5 !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2478,7 +2479,7 @@ input, select, textarea {
 	input[type="email"],
 	select,
 	textarea {
-		border-color: #eeeeee;
+		border-color: #c5c5c5;
 	}
 
 		input[type="text"]:focus,
@@ -2490,7 +2491,7 @@ input, select, textarea {
 		}
 
 	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23eeeeee' /%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23c5c5c5' /%3E%3C/svg%3E");
 	}
 
 		select option {
@@ -2499,7 +2500,7 @@ input, select, textarea {
 		}
 
 	.select-wrapper:before {
-		color: #eeeeee;
+		color: #c5c5c5;
 	}
 
 	input[type="checkbox"] + label,
@@ -2509,7 +2510,7 @@ input, select, textarea {
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
-			border-color: #eeeeee;
+			border-color: #c5c5c5;
 		}
 
 	input[type="checkbox"]:checked + label:before,
@@ -2881,7 +2882,7 @@ input, select, textarea {
 		}
 
 	ul.divided li {
-		border-top-color: #eeeeee;
+		border-top-color: #c5c5c5;
 	}
 
 	ul.icons li a.icon:hover:before {
@@ -2889,7 +2890,7 @@ input, select, textarea {
 	}
 
 	ul.icons.alt li .icon:before {
-		box-shadow: inset 0 0 0 2px #eeeeee;
+		box-shadow: inset 0 0 0 2px #c5c5c5;
 	}
 
 	ul.icons.alt li a.icon:hover:before {
@@ -2990,7 +2991,7 @@ input, select, textarea {
 		}
 
 	header.major .date:before, header.major .date:after {
-		border-top-color: #eeeeee;
+		border-top-color: #c5c5c5;
 	}
 
 /* Table */
@@ -3069,7 +3070,7 @@ input, select, textarea {
 			}
 
 	table tbody tr {
-		border-color: #eeeeee;
+		border-color: #c5c5c5;
 	}
 
 		table tbody tr:nth-child(2n + 1) {
@@ -3081,15 +3082,15 @@ input, select, textarea {
 	}
 
 	table thead {
-		border-bottom-color: #eeeeee;
+		border-bottom-color: #c5c5c5;
 	}
 
 	table tfoot {
-		border-top-color: #eeeeee;
+		border-top-color: #c5c5c5;
 	}
 
 	table.alt tbody tr td {
-		border-color: #eeeeee;
+		border-color: #c5c5c5;
 	}
 
 /* Pagination */
@@ -3182,7 +3183,7 @@ input, select, textarea {
 		}
 
 	.pagination a, .pagination span {
-		border-color: #eeeeee;
+		border-color: #c5c5c5;
 	}
 
 	.pagination a {
@@ -3201,11 +3202,11 @@ input, select, textarea {
 			}
 
 		.pagination a.active {
-			background-color: #eeeeee;
+			background-color: #c5c5c5;
 		}
 
 	.pagination span {
-		color: #eeeeee;
+		color: #c5c5c5;
 	}
 
 /* Wrapper */
@@ -3715,11 +3716,11 @@ input, select, textarea {
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: rgba(255, 255, 255, 0.1);
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #f0f2f0;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -3749,7 +3750,8 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: transparent;
+		color: #c5c5c5;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -3759,7 +3761,7 @@ input, select, textarea {
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			border-top: solid 2px #c5c5c5;
 			margin: 0;
 		}
 
@@ -3855,7 +3857,7 @@ input, select, textarea {
 			}
 
 			#main > .posts > article {
-				border-color: #eeeeee;
+				border-color: grey;
 				border-left-width: 2px;
 				border-style: solid;
 				border-top-width: 2px;
@@ -3941,12 +3943,12 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		color: white;
+		color: #f0f2f0;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #202124;
+		background-color: transparent;
 		color: #909498;
 		cursor: default;
 		position: relative;
@@ -3961,7 +3963,7 @@ input, select, textarea {
 		}
 
 		#footer a {
-			color: white ;
+			color: #f0f2f0 ;
 			border-bottom-color: rgba(113, 121, 129, 0.5);
 		}
 
@@ -3971,11 +3973,11 @@ input, select, textarea {
 			}
 
 		#footer strong, #footer b {
-			color: #717981;
+			color: #f0f2f0;
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #717981;
+			color: #f0f2f0;
 		}
 
 		#footer blockquote {
@@ -4378,7 +4380,6 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
@@ -4576,7 +4577,7 @@ input, select, textarea {
 		}
 
 			#navPanel .links li {
-				border-top: solid 2px #eeeeee;
+				border-top: solid 2px #c5c5c5;
 			}
 
 				#navPanel .links li a {
@@ -4684,3 +4685,4 @@ input, select, textarea {
 	.custom-bg {
 		background-color: #202124;
 	}
+
