@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/main.css" media="all"/>
 	<link rel="stylesheet" href="assets/css/pageloader.css" media="screen,projection">
 
 	<noscript>
@@ -16,16 +16,6 @@
 </head>
 
 <body>
-	<script>
-		$(document).ready(function () {
-			if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-				$("#profile-icon").text("🧑🏾‍💻");
-				$("#project-icon").text("🚀")
-			} else {
-				console.log("This is not an iOS device!");
-			}
-		});
-	</script>
 	<div id="loader-wrapper">
 		<div id="loader"></div>
 		<div class="loader-section section-left"></div>
@@ -67,7 +57,7 @@
 			<!-- About  -->
 
 			<header>
-				<h2>Profile <span id="profile-icon"></span></h2>
+				<h2 id="profile-icon">Profile</h2>
 
 				<!-- <p>Full-stack software engineer knowledgeable about data structures and algorithms, software engineering best practices 
 					and handles them with ease. Committed to delivering efficient and scalable applications, adept at collaborating with cross-functional teams, and 
@@ -109,7 +99,7 @@
 						<h3>Amazon Clone Web App</h3>
 					</header>
 					<a href="https://github.com/benjaminpowell24/Amazon-clone-webapp-react-native-nodejs-firebase"
-						class="image fit"><img src="images/pic02.webp" alt="" /></a>
+						class="image fit"><img src="images/pic02.webp" alt="" loading="lazy"/></a>
 					<p>Leveraged ReactJs to develop a fully functional e-commerce app with an user interface and work
 						flow almost identical to Amazon,
 						enabling credit card payments with Stripe API. Leveraged Firebase for user authentication, data
@@ -127,7 +117,7 @@
 						<h3>Obstacle Detector and Classifier App Yolov4</h3>
 					</header>
 					<a href="https://github.com/benjaminpowell24/Object_detector_flutter_tensorflow"
-						class="image fit"><img src="images/pic03.webp" alt="" /></a>
+						class="image fit"><img src="images/pic03.webp" alt="" loading="lazy"/></a>
 					<p>Leveraged a Tensorflow Yolov4 obstacle detection model to develope a mobile app that can detect
 						household objects in camera stream and classify them.
 					</p>
@@ -142,7 +132,7 @@
 						<h3>Blog Management API</h3>
 					</header>
 					<a href="https://github.com/benjaminpowell24/blog-management.git" class="image fit"><img
-							src="images/pic04.webp" alt="" /></a>
+							src="images/pic04.webp" alt="" loading="lazy"/></a>
 					<p>Created an API in node.js and express for a blog that allows authenticated users to perform CRUD
 						operations on posts they created.
 						Leveraged passport and json web token for secure token based authentication, mongoose and
@@ -161,7 +151,7 @@
 						<h3>Uber Clone App</h3>
 					</header>
 					<a href="https://github.com/benjaminpowell24/uber_clone_with_flutter" class="image fit"><img
-							src="images/pic05.webp" alt="" /></a>
+							src="images/pic05.webp" alt="" loading="lazy"/></a>
 					<p>Developed an Uber-like taxi booking app with flutter, firebase for authentication and real-time
 						database
 						and Googlemaps API</p>
@@ -176,7 +166,7 @@
 						<h3>Book Management API </h3>
 					</header>
 					<a href="https://github.com/benjaminpowell24/Book-REST-API" class="image fit"><img
-							src="images/pic06.webp" alt="" /></a>
+							src="images/pic06.webp" alt="" loading="lazy"/></a>
 					<p>Developed a book management api for CRUD operations on books, authors and publications. Leveraged
 						Node.js, Express and Nodemon.
 					</p>
@@ -191,7 +181,7 @@
 						<h3>Tic-Tac-Toe Game</h3>
 					</header>
 					<a href="https://github.com/benjaminpowell24/TicTacToe_Js" class="image fit"><img
-							src="images/pic07.webp" alt="" /></a>
+							src="images/pic07.webp" alt="" loading="lazy"/></a>
 					<p>Got bored and built a tic-tac-toe game. Enjoy!</p>
 					<ul class="actions special">
 						<li><a href="https://github.com/benjaminpowell24/TicTacToe_Js" class="button">Link to Code</a>
@@ -248,7 +238,7 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<!-- <script type="text/javascript" src="assets/js/plugins.min.js"></script> -->
-
+		<script src="/assets/js/platform.js"></script>
 </body>
 
 </html>
