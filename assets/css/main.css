@@ -3751,7 +3751,7 @@ input, select, textarea {
 
 	#main {
 		background-color: transparent;
-		color: #c5c5c5;
+		color: #f0f2f0;
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
