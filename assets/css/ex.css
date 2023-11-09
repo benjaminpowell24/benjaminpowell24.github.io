@@ -3907,7 +3907,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     }
 
     #intro-h1-header>h1 {
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
         border-right: .12em solid orange;
     }
 }
