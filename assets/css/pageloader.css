@@ -222,13 +222,9 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .profile-pic-size {
-        width: 200px;
-    }
-
+/* @media screen and (max-width: 480px) {
     #intro-h1-header>h1 {
         font-size: 0.9rem !important;
         border-right: .12em solid orange;
     }
-}
+} */
