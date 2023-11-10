@@ -193,3 +193,42 @@
     display: inline-block;
 }
 
+.profile-pic-size {
+    width: 250px;
+}
+
+
+
+@media screen and (max-width: 980px) {
+    .profile-pic-size {
+        width: 250px;
+    }
+
+    #intro-h1-header>h1 {
+        font-size: 1.8rem !important;
+        border-right: .12em solid orange;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+    .profile-pic-size {
+        width: 200px;
+    }
+
+    #intro-h1-header>h1 {
+        font-size: 1.5rem !important;
+        border-right: .12em solid orange;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-pic-size {
+        width: 200px;
+    }
+
+    #intro-h1-header>h1 {
+        font-size: 0.9rem !important;
+        border-right: .12em solid orange;
+    }
+}
