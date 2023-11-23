@@ -1,1 +1,111 @@
-!function(e){var n,a,o,i=e(window),l=e("body"),r=e("#wrapper"),s=e("#header"),t=e("#nav"),d=e("#main");breakpoints({default:["1681px",null],xlarge:["1281px","1680px"],large:["981px","1280px"],medium:["737px","980px"],small:["481px","736px"],xsmall:["361px","480px"],xxsmall:[null,"360px"]}),e.fn._parallax=function(n){var a=e(window),o=e(this);if(0==this.length||0===n)return o;if(this.length>1){for(var i=0;i<this.length;i++)e(this[i])._parallax(n);return o}return n||(n=.25),o.each(function(){var o,i,l=e(this),r=e('<div class="bg"></div>').appendTo(l);o=function(){r.removeClass("fixed").css("transform","matrix(1,0,0,1,0,0)"),a.on("scroll._parallax",function(){var e=parseInt(a.scrollTop())-parseInt(l.position().top);r.css("transform","matrix(1,0,0,1,0,"+e*n+")")})},i=function(){r.addClass("fixed").css("transform","none"),a.off("scroll._parallax")},"ie"==browser.name||"edge"==browser.name||window.devicePixelRatio>1||browser.mobile?i():(breakpoints.on(">large",o),breakpoints.on("<=large",i))}),a.off("load._parallax resize._parallax").on("load._parallax resize._parallax",function(){a.trigger("scroll")}),e(this)},i.on("load",function(){window.setTimeout(function(){l.addClass("loaded")},100)}),e(".scrolly").scrolly(),r._parallax(.925),n=e('<a href="#navPanel" id="navPanelToggle">Menu</a>').appendTo(r),s.scrollex({bottom:"5vh",enter:function(){n.removeClass("alt")},leave:function(){n.addClass("alt")}}),a=e('<div id="navPanel"><nav></nav><a href="#navPanel" class="close"></a></div>').appendTo(l).panel({delay:500,hideOnClick:!0,hideOnSwipe:!0,resetScroll:!0,resetForms:!0,side:"right",target:l,visibleClass:"is-navPanel-visible"}),o=a.children("nav");var c=t.children();breakpoints.on(">medium",function(){c.appendTo(t),t.find(".icons, .icon").removeClass("alt")}),breakpoints.on("<=medium",function(){c.appendTo(o),o.find(".icons, .icon").addClass("alt")}),"wp"==browser.os&&browser.osVersion<10&&a.css("transition","none");var p=e("#intro");p.length>0&&("ie"==browser.name&&i.on("resize.ie-intro-fix",function(){var e=p.height();e>i.height()?p.css("height","auto"):p.css("height",e)}).trigger("resize.ie-intro-fix"),breakpoints.on(">small",function(){d.unscrollex(),d.scrollex({mode:"bottom",top:"25vh",bottom:"-50vh",enter:function(){p.addClass("hidden")},leave:function(){p.removeClass("hidden")}})}),breakpoints.on("<=small",function(){d.unscrollex(),d.scrollex({mode:"middle",top:"15vh",bottom:"-15vh",enter:function(){p.addClass("hidden")},leave:function(){p.removeClass("hidden")}})}))}(jQuery);
+!(function (e) {
+    var n,
+        a,
+        o,
+        i = e(window),
+        l = e("body"),
+        r = e("#wrapper"),
+        s = e("#header"),
+        t = e("#nav"),
+        d = e("#main");
+    breakpoints({ default: ["1681px", null], xlarge: ["1281px", "1680px"], large: ["981px", "1280px"], medium: ["737px", "980px"], small: ["481px", "736px"], xsmall: ["361px", "480px"], xxsmall: [null, "360px"] }),
+        (e.fn._parallax = function (n) {
+            var a = e(window),
+                o = e(this);
+            if (0 == this.length || 0 === n) return o;
+            if (this.length > 1) {
+                for (var i = 0; i < this.length; i++) e(this[i])._parallax(n);
+                return o;
+            }
+            return (
+                n || (n = 0.25),
+                o.each(function () {
+                    var o,
+                        i,
+                        l = e(this),
+                        r = e('<div class="bg"></div>').appendTo(l);
+                    (o = function () {
+                        r.removeClass("fixed").css("transform", "matrix(1,0,0,1,0,0)"),
+                            a.on("scroll._parallax", function () {
+                                var e = parseInt(a.scrollTop()) - parseInt(l.position().top);
+                                r.css("transform", "matrix(1,0,0,1,0," + e * n + ")");
+                            });
+                    }),
+                        (i = function () {
+                            r.addClass("fixed").css("transform", "none"), a.off("scroll._parallax");
+                        }),
+                        "ie" == browser.name || "edge" == browser.name || window.devicePixelRatio > 1 || browser.mobile ? i() : (breakpoints.on(">large", o), breakpoints.on("<=large", i));
+                }),
+                a.off("load._parallax resize._parallax").on("load._parallax resize._parallax", function () {
+                    a.trigger("scroll");
+                }),
+                e(this)
+            );
+        }),
+        i.on("load", function () {
+            window.setTimeout(function () {
+                l.addClass("loaded");
+            }, 100);
+        }),
+        e(".scrolly").scrolly(),
+        r._parallax(0.925),
+        (n = e('<a href="#navPanel" id="navPanelToggle">Menu</a>').appendTo(r)),
+        s.scrollex({
+            bottom: "5vh",
+            enter: function () {
+                n.removeClass("alt");
+            },
+            leave: function () {
+                n.addClass("alt");
+            },
+        }),
+        (a = e('<div id="navPanel"><nav></nav><a href="#navPanel" class="close"></a></div>')
+            .appendTo(l)
+            .panel({ delay: 500, hideOnClick: !0, hideOnSwipe: !0, resetScroll: !0, resetForms: !0, side: "right", target: l, visibleClass: "is-navPanel-visible" })),
+        (o = a.children("nav"));
+    var c = t.children();
+    breakpoints.on(">medium", function () {
+        c.appendTo(t), t.find(".icons, .icon").removeClass("alt");
+    }),
+        breakpoints.on("<=medium", function () {
+            c.appendTo(o), o.find(".icons, .icon").addClass("alt");
+        }),
+        "wp" == browser.os && browser.osVersion < 10 && a.css("transition", "none");
+    var p = e("#intro");
+    p.length > 0 &&
+        ("ie" == browser.name &&
+            i
+                .on("resize.ie-intro-fix", function () {
+                    var e = p.height();
+                    e > i.height() ? p.css("height", "auto") : p.css("height", e);
+                })
+                .trigger("resize.ie-intro-fix"),
+        breakpoints.on(">small", function () {
+            d.unscrollex(),
+                d.scrollex({
+                    mode: "bottom",
+                    top: "80vh",
+                    bottom: "-50vh",
+                    enter: function () {
+                        p.addClass("hidden");
+                    },
+                    leave: function () {
+                        p.removeClass("hidden");
+                    },
+                });
+        }),
+        breakpoints.on("<=small", function () {
+            d.unscrollex(),
+                d.scrollex({
+                    mode: "middle",
+                    top: "25vh",
+                    bottom: "-15vh",
+                    enter: function () {
+                        p.addClass("hidden");
+                    },
+                    leave: function () {
+                        p.removeClass("hidden");
+                    },
+                });
+        }));
+})(jQuery);

@@ -185,7 +185,7 @@
     }
 
     50% {
-        border-color: orange;
+        border-color: #efbd18;
     }
 }
 
@@ -198,7 +198,6 @@
 }
 
 
-
 @media screen and (max-width: 980px) {
     .profile-pic-size {
         width: 250px;
@@ -206,7 +205,6 @@
 
     #intro-h1-header>h1 {
         font-size: 3.5rem !important;
-        border-right: .12em solid orange;
     }
 
 }
