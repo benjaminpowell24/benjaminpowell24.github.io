@@ -7,14 +7,14 @@ import Hamburger from './Hamburger'
 const Navbar = () => {
   return (
     <nav className='bg-black'>
-      <div className='container mx-auto h-20 grid content-between'>
+      <div className='container mx-auto px-4 h-20 grid content-between'>
         <div className='flex'>
           <PersonFillIcon size={24} />
           <p className='text-lg'>Benjamin Powell</p>
         </div>
         <div className='columns-2'>
           <div className='flex justify-start'>
-            <ul className='hidden md:flex space-x-4'>
+            <ul className='hidden lg:flex space-x-4'>
               {menuItems.map((item) => (
                 <li key={item.name}>
                   <a
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className='flex md:hidden'>
+            <div className='visible lg:hidden'>
               <Hamburger />
             </div>
           </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <li key={social.name} className='text-white'>
                   <a href='' className='flex items-center hover:text-cyan-500'>
                     <FontAwesomeIcon icon={social.icon} size='lg' />
-                    <span className='hidden md:inline px-2'>{social.name}</span>
+                    <span className='hidden lg:inline px-2'>{social.name}</span>
                   </a>
                 </li>
               ))}
