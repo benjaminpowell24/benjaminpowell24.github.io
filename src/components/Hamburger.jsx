@@ -33,7 +33,11 @@ const Hamburger = () => {
           </NavList.Item>
           <div className='my-5'>
             {menuItems.map((item) => (
-              <NavList.Item href={item.link} style={{ color: 'white' }}>
+              <NavList.Item
+                key={item.name}
+                href={item.link}
+                style={{ color: 'white' }}
+              >
                 <NavList.LeadingVisual style={{ color: 'white' }}>
                   {item.icon}
                 </NavList.LeadingVisual>
