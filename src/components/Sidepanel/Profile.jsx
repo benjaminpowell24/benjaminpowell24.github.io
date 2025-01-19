@@ -34,10 +34,6 @@ const Profile = ({
           </div>
         </div>
         <p className='my-5'>{bio}</p>
-        <div className='flex items-center my-2'>
-          <PeopleIcon />
-          <p className='px-2'>{`${followers} followers • ${following} following`}</p>
-        </div>
         <div className='flex items-center '>
           <LocationIcon />
           <p className='px-2'>{location}</p>
