@@ -1,12 +1,12 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { PersonFillIcon } from '@primer/octicons-react'
-import { menuItems, socials } from '../menu'
+import { menuItems, socials } from './menu'
 import Hamburger from './Hamburger'
 
 const Navbar = () => {
   return (
-    <nav className='bg-black'>
+    <nav>
       <div className='container mx-auto px-4 h-20 grid content-between'>
         <div className='flex'>
           <PersonFillIcon size={24} />
@@ -19,6 +19,7 @@ const Navbar = () => {
                 <li key={item.name}>
                   <a
                     href={item.link}
+                    target={item.target}
                     className='flex items-center hover:text-cyan-500'
                   >
                     {item.icon}
@@ -35,7 +36,11 @@ const Navbar = () => {
             <ul className='flex space-x-4'>
               {socials.map((social) => (
                 <li key={social.name} className='text-white'>
-                  <a href='' className='flex items-center hover:text-cyan-500'>
+                  <a
+                    href={social.link}
+                    target='_blank'
+                    className='flex items-center hover:text-cyan-500'
+                  >
                     <FontAwesomeIcon icon={social.icon} size='lg' />
                     <span className='hidden lg:inline px-2'>{social.name}</span>
                   </a>

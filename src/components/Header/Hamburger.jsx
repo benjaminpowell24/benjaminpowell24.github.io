@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThreeBarsIcon } from '@primer/octicons-react'
 import { NavList } from '@primer/react'
-import { menuItems } from '../menu'
+import { menuItems } from './menu'
 import { PersonFillIcon, XIcon } from '@primer/octicons-react'
 
 const Hamburger = () => {
