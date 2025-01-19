@@ -36,6 +36,7 @@ const Hamburger = () => {
               <NavList.Item
                 key={item.name}
                 href={item.link}
+                target={item.target}
                 style={{ color: 'white' }}
               >
                 <NavList.LeadingVisual style={{ color: 'white' }}>
