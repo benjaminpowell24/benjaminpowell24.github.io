@@ -1,0 +1,101 @@
+.fab-container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+}
+
+.cube {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+.face {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0px lightyellow;
+}
+
+.face > div {
+  text-align: center;
+}
+
+.aws {
+  color: #dd0031;
+}
+
+.node {
+  color: #43853d;
+}
+
+.react {
+  color: #28a4d9;
+}
+
+.js {
+  color: #efd81d;
+}
+
+.git {
+  color: #ec4d28;
+}
+
+.cool-blue {
+  color: #18bfef;
+}
+
+.front {
+  transform: translateZ(25px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(25px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(25px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(25px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(25px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(25px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  10% {
+    transform: rotateY(45deg);
+  }
+  20% {
+    transform: rotateY(-90deg);
+  }
+  40% {
+    transform: rotateY(-90deg) rotateZ(270deg);
+  }
+  60% {
+    transform: rotateY(-90deg) rotateZ(0deg);
+  }
+  80% {
+    transform: rotateY(180deg) rotateZ(0deg);
+  }
+  90% {
+    transform: rotateX(0deg) rotateY(180deg) rotateZ(360deg);
+  }
+}
+
+.cube {
+  animation: rotate 7s linear 3s infinite;
+}

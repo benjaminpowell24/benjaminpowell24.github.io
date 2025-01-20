@@ -1,8 +1,8 @@
 const Content = () => {
   return (
     <div>
-      <section id='projects' className='my-5'>
-        <h1 className='text-2xl font-bold my-2'>Projects</h1>
+      <section id='projects' className='my-10'>
+        <h1 className='text-2xl font-bold my-5'>Projects</h1>
         <div className='grid md:grid-cols-2 gap-3'>
           <div className='border border-gray-200 rounded p-4'>Content 1</div>
           <div className='border border-gray-200 rounded p-4'>Content 2</div>
@@ -11,8 +11,8 @@ const Content = () => {
         </div>
       </section>
       <section id='articles'></section>
-      <section id='about' className='my-5'>
-        <h1 className='text-2xl font-bold my-2'>About Ben</h1>
+      <section id='about' className='my-10'>
+        <h1 className='text-2xl font-bold my-5'>About Ben</h1>
         <p className='my-2'>
           Ben is a passionate Software Engineer who thrives on the challenges
           and creativity his work brings. What drives him? The joy of mastering

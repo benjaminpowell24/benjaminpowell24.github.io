@@ -4,6 +4,7 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import Profile from './components/Sidepanel/Profile'
 import Content from './components/Main/Content'
+import Cube from './components/Animation/Cube'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -27,6 +28,7 @@ function App() {
   return (
     <ThemeProvider>
       <BaseStyles>
+        <Cube />
         <SplitPageLayout>
           <SplitPageLayout.Header
             divider='none'
