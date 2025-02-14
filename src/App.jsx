@@ -40,6 +40,7 @@ function App() {
               <Navbar />
             </SplitPageLayout.Header>
             <SplitPageLayout.Pane
+              sticky={true}
               divider='none'
               position='start'
               aria-label='Profile'

@@ -23,7 +23,7 @@ const Content = () => {
     <div>
       <section id='projects' className='my-10'>
         <h1 className='text-2xl font-bold my-5'>Projects</h1>
-        <div className='grid md:grid-cols-2 gap-3'>
+        <div className='grid lg:grid-cols-2 gap-3'>
           <div className='border border-[#3c454d] rounded p-4'>
             <div className='flex items-center justify-between'>
               <div className='flex items-center'>
