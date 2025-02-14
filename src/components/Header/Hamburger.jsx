@@ -16,13 +16,10 @@ const Hamburger = () => {
         <ThreeBarsIcon size={24} />
       </button>
       {isOpen && (
-        <NavList
-          className='w-1/2 md:w-1/3 lg:w-1/4 top-0 left-0 fixed h-screen py-2'
-          style={{ backgroundColor: '#0d1118' }}
-        >
+        <NavList className='w-1/2 md:w-1/3 lg:w-1/4 top-0 left-0 fixed h-screen py-2 bg-[#0d1118] z-99'>
           <NavList.Item>
             <NavList.LeadingVisual style={{ color: 'white' }}>
-              <PersonFillIcon size={24} />
+              <span className='text-cyan-500'>$BEN</span>
             </NavList.LeadingVisual>
             <NavList.TrailingAction
               label='close'

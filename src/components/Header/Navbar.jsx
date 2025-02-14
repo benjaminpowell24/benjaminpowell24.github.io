@@ -1,16 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { PersonFillIcon } from '@primer/octicons-react'
 import { menuItems, socials } from './menu'
 import Hamburger from './Hamburger'
 
 const Navbar = () => {
   return (
     <nav>
-      <div className='container mx-auto px-4 h-20 grid content-between'>
+      <div className='container mx-4 h-20 grid content-between'>
         <div className='flex'>
-          <PersonFillIcon size={24} />
-          <p className='text-lg'>Benjamin Powell</p>
+          <p className='text-lg text-white'>
+            <span className='text-cyan-500'>$BEN</span>
+          </p>
         </div>
         <div className='columns-2'>
           <div className='flex justify-start'>

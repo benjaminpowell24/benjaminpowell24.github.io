@@ -29,28 +29,32 @@ function App() {
     <ThemeProvider>
       <BaseStyles>
         <Cube />
-        <SplitPageLayout>
-          <SplitPageLayout.Header
-            divider='none'
-            style={{ backgroundColor: 'black' }}
-          >
-            <Navbar />
-          </SplitPageLayout.Header>
-          <SplitPageLayout.Pane
-            position='start'
-            aria-label='Profile'
-            width={{ min: '200px', default: '400px', max: '500px' }}
-            className='container mx-auto px-4 py-8'
-          >
-            <Profile {...user} />
-          </SplitPageLayout.Pane>
-          <SplitPageLayout.Content>
-            <Content />
-          </SplitPageLayout.Content>
-          <SplitPageLayout.Footer divider='none'>
-            <p className='text-center font-medium'>© 2025 Benjamin Powell </p>
-          </SplitPageLayout.Footer>
-        </SplitPageLayout>
+        <div className='max-w-7xl mx-auto'>
+          <SplitPageLayout>
+            <SplitPageLayout.Header
+              divider='none'
+              style={{
+                borderBottom: '1px solid #3c454d',
+              }}
+            >
+              <Navbar />
+            </SplitPageLayout.Header>
+            <SplitPageLayout.Pane
+              divider='none'
+              position='start'
+              aria-label='Profile'
+              className='container mx-auto px-4 py-8 border-b border-[#3c454d] lg:border-r lg:border-b-0'
+            >
+              <Profile {...user} />
+            </SplitPageLayout.Pane>
+            <SplitPageLayout.Content>
+              <Content />
+            </SplitPageLayout.Content>
+            <SplitPageLayout.Footer divider='none'>
+              <p className='text-center font-medium'>© 2025 Benjamin Powell </p>
+            </SplitPageLayout.Footer>
+          </SplitPageLayout>
+        </div>
       </BaseStyles>
     </ThemeProvider>
   )

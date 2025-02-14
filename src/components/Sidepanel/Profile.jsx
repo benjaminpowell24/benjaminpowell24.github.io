@@ -21,7 +21,6 @@ const Profile = ({
     <section className='container mx-auto px-4 py-8 justify-items-center lg:justify-items-end'>
       <div>
         <div className='flex md:flex-col items-center md:items-start'>
-          <img className='size-20 md:size-60 rounded-full' src={avatar_url} />
           <div className='mx-4 md:mx-0'>
             <h1 className='text-2xl font-bold'>Benjamin Powell</h1>
             <a
