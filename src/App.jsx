@@ -4,7 +4,6 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import Profile from './components/Sidepanel/Profile'
 import Content from './components/Main/Content'
-import Cube from './components/Animation/Cube'
 
 function App() {
   const [user, setUser] = useState(null)
@@ -28,7 +27,6 @@ function App() {
   return (
     <ThemeProvider>
       <BaseStyles>
-        <Cube />
         <div className='max-w-7xl mx-auto'>
           <SplitPageLayout>
             <SplitPageLayout.Header
@@ -44,7 +42,7 @@ function App() {
               divider='none'
               position='start'
               aria-label='Profile'
-              className='container mx-auto px-4 py-8 border-b border-[#3c454d] lg:border-r lg:border-b-0'
+              className='container mx-auto px-4 py-8 border-b border-[#3c454d] lg:border-r md:border-b-0'
             >
               <Profile {...user} />
             </SplitPageLayout.Pane>
@@ -52,7 +50,9 @@ function App() {
               <Content />
             </SplitPageLayout.Content>
             <SplitPageLayout.Footer divider='none'>
-              <p className='text-center font-medium'>© 2025 Benjamin Powell </p>
+              <p className='text-center font-medium text-xs'>
+                © 2025 Benjamin Powell. All rights reserved.
+              </p>
             </SplitPageLayout.Footer>
           </SplitPageLayout>
         </div>

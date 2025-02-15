@@ -14,15 +14,13 @@ import {
 } from '@primer/octicons-react'
 
 export const menuItems = [
-  { name: 'Overview', link: '', icon: <BookIcon /> },
-  { name: 'Projects', link: '', icon: <TableIcon /> },
+  { name: 'Overview', link: '/', icon: <PersonIcon /> },
   {
     name: 'Resume',
     link: 'https://firebasestorage.googleapis.com/v0/b/benjaminpowell-portfolio.appspot.com/o/Powell.pdf?alt=media&token=fb3c19e6-689f-49b3-964d-2e50aa1afda9',
     target: '_blank',
     icon: <LogIcon />,
   },
-  { name: 'About', link: '', icon: <PersonIcon /> },
   {
     name: 'Medium',
     link: 'https://medium.com/@benjaminpowell24',

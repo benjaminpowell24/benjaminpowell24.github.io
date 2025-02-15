@@ -1,4 +1,8 @@
-import { PeopleIcon, LocationIcon, MailIcon } from '@primer/octicons-react'
+import {
+  OrganizationIcon,
+  LocationIcon,
+  MailIcon,
+} from '@primer/octicons-react'
 import {
   faLinkedin,
   faXTwitter,
@@ -11,6 +15,7 @@ const Profile = ({
   avatar_url,
   followers,
   following,
+  company,
   location,
   twitter_username,
   bio,
@@ -23,26 +28,29 @@ const Profile = ({
         <div className='flex md:flex-col items-center md:items-start'>
           <div className='mx-4 md:mx-0'>
             <h1 className='text-2xl font-bold'>Benjamin Powell</h1>
-            <a
-              href={html_url}
-              className='flex items-center hover:text-cyan-500 text-xl'
-            >
-              <FontAwesomeIcon icon={faGithub} />
-              <span className='px-2'>{login}</span>
-            </a>
+            <p className='text-xl'>{bio}</p>
           </div>
         </div>
-        <p className='my-5'>{bio}</p>
-        <div className='flex items-center '>
-          <LocationIcon />
-          <p className='px-2'>{location}</p>
-        </div>
+        <p className='my-5'>
+          Full Stack, Cross-platform Mobile, Embedded Systems, Technical Writer
+        </p>
+        <a
+          href='https://www.purplewave.com/'
+          className='flex items-center hover:text-cyan-500'
+        >
+          <OrganizationIcon />
+          <span className='px-2'>{company}</span>
+        </a>
         <a
           href='mailto:benjaminpowell24@gmail.com'
           className='flex items-center hover:text-cyan-500'
         >
           <MailIcon />
           <span className='px-2'>benjaminpowell24@gmail.com</span>
+        </a>
+        <a href={html_url} className='flex items-center hover:text-cyan-500'>
+          <FontAwesomeIcon icon={faGithub} />
+          <span className='px-2'>{login}</span>
         </a>
         <a
           href='https://www.linkedin.com/in/benjamin-powell-9123bb167/'
