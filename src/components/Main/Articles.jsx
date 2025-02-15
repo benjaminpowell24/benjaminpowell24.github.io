@@ -31,6 +31,19 @@ const Articles = () => {
             <div></div>
           </div>
         </article>
+        <article className='border border-[#3c454d] rounded p-4'>
+          <a
+            href='https://medium.com/@benjaminpowell24/how-to-use-https-on-localhost-3339cd493ff6'
+            className='font-semibold text-sky-600'
+            target='_blank'
+          >
+            How to use HTTPS on localhost
+          </a>
+          <div className='my-2 flex items-center justify-between'>
+            <p>Nov 24, 2023</p>
+            <div></div>
+          </div>
+        </article>
       </div>
     </section>
   )

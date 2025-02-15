@@ -32,7 +32,7 @@ const Profile = ({
           </div>
         </div>
         <p className='my-5'>
-          Full Stack, Cross-platform Mobile, Embedded Systems, Technical Writer
+          Full Stack, Cross-platform Mobile, Embedded Systems, Technical Writer.
         </p>
         <a
           href='https://www.purplewave.com/'
