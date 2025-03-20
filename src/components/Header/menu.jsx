@@ -17,7 +17,7 @@ export const menuItems = [
   { name: 'Overview', link: '/', icon: <PersonIcon /> },
   {
     name: 'Resume',
-    link: 'https://firebasestorage.googleapis.com/v0/b/benjaminpowell-portfolio.appspot.com/o/Powell.pdf?alt=media&token=461e18b3-a6de-4059-a418-a0a891576b65',
+    link: 'https://firebasestorage.googleapis.com/v0/b/benjaminpowell-portfolio.appspot.com/o/Powell_Benjamin_Resume.pdf?alt=media&token=8aac7fe9-5e4e-442c-90be-c342de1c84db',
     target: '_blank',
     icon: <LogIcon />,
   },
