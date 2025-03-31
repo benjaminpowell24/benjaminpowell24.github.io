@@ -7,6 +7,19 @@ const Articles = () => {
       <div className='grid lg:grid-cols-2 gap-3'>
         <article className='border border-[#3c454d] rounded p-4'>
           <a
+            href='https://medium.com/@benjaminpowell24/how-to-resolve-divergent-branches-in-git-435c944e4618'
+            className='font-semibold text-sky-600'
+            target='_blank'
+          >
+            How to Resolve Divergent Branches in Git
+          </a>
+          <div className='my-2 flex items-center justify-between'>
+            <p>Feb 23, 2025</p>
+            <div></div>
+          </div>
+        </article>
+        <article className='border border-[#3c454d] rounded p-4'>
+          <a
             href='https://medium.com/@benjaminpowell24/how-to-implement-a-load-balancer-with-nginx-and-docker-1e2d68c676b5'
             className='font-semibold text-sky-600'
             target='_blank'
