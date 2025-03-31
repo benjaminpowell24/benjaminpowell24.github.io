@@ -32,7 +32,7 @@ const Navbar = () => {
               <Hamburger />
             </div>
           </div>
-          <div className='flex justify-end'>
+          <div className='flex justify-end mx-2'>
             <ul className='flex space-x-4'>
               {socials.map((social) => (
                 <li key={social.name} className='text-white'>
