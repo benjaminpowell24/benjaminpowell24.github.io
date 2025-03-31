@@ -30,7 +30,7 @@ const Projects = () => {
               <RepoIcon />
               <a
                 href='https://github.com/benjaminpowell24/smart-assistant'
-                className='mx-2 font-semibold text-sky-600'
+                className='mx-2 font-semibold text-sky-500'
                 target='_blank'
               >
                 Smart Assistant
@@ -59,7 +59,7 @@ const Projects = () => {
               <RepoIcon />
               <a
                 href='https://github.com/benjaminpowell24/Obstacle-classifier-detector'
-                className='mx-2 font-semibold text-sky-600'
+                className='mx-2 font-semibold text-sky-500'
                 target='_blank'
               >
                 Obstacle Detector and classifier
@@ -89,7 +89,7 @@ const Projects = () => {
               <RepoIcon />
               <a
                 href='https://github.com/benjaminpowell24/Amazon-clone'
-                className='mx-2 font-semibold text-sky-600'
+                className='mx-2 font-semibold text-sky-500'
                 target='_blank'
               >
                 E-commerce Web App
@@ -114,7 +114,7 @@ const Projects = () => {
               <RepoIcon />
               <a
                 href='https://github.com/benjaminpowell24/nginx-load-balancer'
-                className='mx-2 font-semibold text-sky-600'
+                className='mx-2 font-semibold text-sky-500'
                 target='_blank'
               >
                 Application Load Balancer
