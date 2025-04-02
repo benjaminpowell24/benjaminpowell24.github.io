@@ -5,9 +5,9 @@ import Projects from './Projects'
 const Content = () => {
   return (
     <>
+      <About />
       <Projects />
       <Articles />
-      <About />
     </>
   )
 }

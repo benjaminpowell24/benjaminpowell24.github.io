@@ -1,29 +1,26 @@
 const About = () => {
   return (
-    <section id='about' className='my-10'>
-      <h1 className='text-2xl font-bold my-5'>About Ben</h1>
-      <p className='my-2'>
-        Ben is a passionate Software Engineer who thrives on the challenges and
-        creativity his work brings. What drives him? The fulfillment of
-        mastering complex problems and crafting elegant solutions. Ben is not
-        just good at what he does—he excels because he genuinely loves it.
+    <section id="about" className="my-10">
+      <h1 className="text-2xl font-bold my-5">About Me</h1>
+      <p className="my-2">
+        I am a seasoned Senior Full-Stack Engineer with proven experience
+        designing and building scalable, high-impact software solutions.
+        Proficient in JavaScript, TypeScript, Python, and modern frameworks like
+        React, NextJS, and Node.js.
       </p>
-      <p className='my-2'>
-        An avid experimenter, Ben is always exploring new technologies and
-        pushing boundaries to stay at the forefront of innovation. His work is
-        grounded in three core principles:{' '}
-        <span className='text-cyan-500'>Integrity</span>,
-        <span className='text-cyan-500'> Trust</span>, and{' '}
-        <span className='text-cyan-500'>Respect</span>—values that guide every
-        project he undertakes and every relationship he builds.
+      <p className="my-2">
+        I specialize in end-to-end product development, from architectural
+        design to deployment. My work has delivered measurable results,
+        including a 77% decrease in page load times, an 80% reduction in process
+        downtime, and a 67% increase in sales leads for various organizations.
+        With expertise in Docker, CI/CD, AWS, and machine learning tools like
+        TensorFlow, I thrive in creating efficient, user-focused applications.
       </p>
-      <p className='my-2'>
-        Beyond coding, Ben is dedicated to giving back. He loves mentoring
-        younger students and developers, empowering them to grow and succeed in
-        their own journeys. When he's not mentoring, you’ll find him writing
-        technical articles, sharing insights to help others in the tech
-        community. And his biggest achievement yet? Getting you to open this
-        website. Thanks for stopping by!
+      <p className="my-2">
+        I excel in collaborative, Agile environments, leveraging strong
+        problem-solving skills and a passion for clean, optimized code to drive
+        innovation. I bring a global perspective to remote and hybrid teams,
+        consistently enhancing performance, scalability, and user experience.
       </p>
     </section>
   )
