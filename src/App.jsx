@@ -84,7 +84,7 @@ function App() {
                 <Profile {...user} />
               </SplitPageLayout.Pane>
               <SplitPageLayout.Content>
-                <Content />
+                <Content isDarkMode={isDarkMode} />
               </SplitPageLayout.Content>
               <SplitPageLayout.Footer divider="none">
                 <p className="text-center font-medium text-xs">

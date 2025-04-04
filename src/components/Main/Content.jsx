@@ -2,11 +2,11 @@ import About from './About'
 import Articles from './Articles'
 import Projects from './Projects'
 
-const Content = () => {
+const Content = ({ isDarkMode }) => {
   return (
     <>
       <About />
-      <Projects />
+      <Projects isDarkMode={isDarkMode} />
       <Articles />
     </>
   )
