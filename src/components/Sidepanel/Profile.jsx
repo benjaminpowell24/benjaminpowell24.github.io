@@ -66,6 +66,11 @@ const Profile = ({
           <FontAwesomeIcon icon={faXTwitter} />
           <span className='px-2'>{twitter_username}</span>
         </a>
+        <div className='my-5'>
+          <button className='rounded-full bg-cyan-500 dark:bg-sky-500 text-white px-4 py-2 hover:bg-cyan-600 dark:hover:bg-sky-600'>          
+            <a href="https://calendly.com/benjaminpowell24/30min" target="_blank" rel="noopener">Book a free 30-min meeting</a>
+          </button>
+        </div>
       </div>
     </section>
   )

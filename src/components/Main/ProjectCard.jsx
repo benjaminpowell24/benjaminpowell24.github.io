@@ -27,7 +27,7 @@ const ProjectCard = ({ id, title, description, github, tags, isDarkMode }) => {
           <RepoIcon />
           <a
             href={github}
-            className="mx-2 font-semibold dark:text-sky-500"
+            className="mx-2 font-semibold dark:text-white"
             target="_blank"
           >
             {title}
@@ -38,7 +38,7 @@ const ProjectCard = ({ id, title, description, github, tags, isDarkMode }) => {
         </div>
       </div>
 
-      <p className="text-[#4A5568] dark:text-white">{description}</p>
+      <p className="text-[#4A5568] dark:text-white my-2">{description}</p>
       <div className="flex flex-wrap gap-2 my-2">
         {tags.map((tag) => (
           <span

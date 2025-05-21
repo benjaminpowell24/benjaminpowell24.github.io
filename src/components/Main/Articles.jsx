@@ -3,7 +3,7 @@ import React from 'react'
 const Articles = () => {
   return (
     <section id="articles">
-      <h1 className="text-2xl font-bold my-5">Articles</h1>
+      <h1 className="text-2xl font-bold my-5">Articles 📰</h1>
       <div className="grid lg:grid-cols-2 gap-3">
         <article className="border border-[#0000001A] dark:border-[#3c454d] rounded p-4">
           <a

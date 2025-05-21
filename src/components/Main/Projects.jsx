@@ -32,7 +32,7 @@ const Projects = ({ isDarkMode }) => {
 
   return (
     <section id="projects" className="my-10">
-      <h1 className="text-2xl font-bold my-5">Projects</h1>
+      <h1 className="text-2xl font-bold my-5">Projects 🚀</h1>
       <DndContext onDragEnd={handleDragEnd}>
         <div className="grid lg:grid-cols-2 gap-3">
           {projects.map((project, index) => (
